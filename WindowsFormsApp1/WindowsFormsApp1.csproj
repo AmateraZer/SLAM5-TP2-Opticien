@@ -127,6 +127,9 @@
         <EmbeddedResource Include="FormHome.resx">
           <DependentUpon>FormHome.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="GestionStock.resx">
+          <DependentUpon>GestionStock.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +139,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="VenteReservation.resx">
+          <DependentUpon>VenteReservation.cs</DependentUpon>
+        </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>

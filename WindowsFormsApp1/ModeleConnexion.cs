@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
         }
 
 
-
+    
         public void seconnecter()
         {
             string myConnectionString = "Database=opticiencorrection;Data Source=localhost;User Id=root; Password=;SslMode = none;";

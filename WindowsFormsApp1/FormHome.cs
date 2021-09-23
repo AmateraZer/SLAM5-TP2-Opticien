@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         
-        private void FormConnexion_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             Controleur.initConnexion();
             Controleur.VmodeleC.seconnecter();
@@ -52,7 +52,15 @@ namespace WindowsFormsApp1
             GestionStock GS = new GestionStock();
             GS.Show();
         }
+
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         
+            
         
     }
 }
