@@ -31,34 +31,119 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Gestion = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgvFormations = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbCompetences = new System.Windows.Forms.ComboBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.Gestion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dgvFormations)).BeginInit();
             this.SuspendLayout();
             // 
             // Gestion
             // 
+            this.Gestion.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Gestion.Controls.Add(this.label3);
+            this.Gestion.Controls.Add(this.dgvFormations);
+            this.Gestion.Controls.Add(this.label2);
+            this.Gestion.Controls.Add(this.label1);
+            this.Gestion.Controls.Add(this.comboBox1);
+            this.Gestion.Controls.Add(this.cbCompetences);
+            this.Gestion.Controls.Add(this.linkLabel1);
             this.Gestion.Location = new System.Drawing.Point(12, 12);
             this.Gestion.Name = "Gestion";
-            this.Gestion.Size = new System.Drawing.Size(374, 377);
+            this.Gestion.Size = new System.Drawing.Size(649, 377);
             this.Gestion.TabIndex = 0;
             this.Gestion.TabStop = false;
             this.Gestion.Text = "Gestion des stocks";
             // 
-            // groupBox2
+            // label3
             // 
-            this.groupBox2.Location = new System.Drawing.Point(414, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(362, 312);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Liste des stocks restants";
+            this.label3.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label3.Location = new System.Drawing.Point(280, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 30);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "STOCKS";
+            // 
+            // dgvFormations
+            // 
+            this.dgvFormations.AllowUserToAddRows = false;
+            this.dgvFormations.AllowUserToDeleteRows = false;
+            this.dgvFormations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvFormations.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvFormations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFormations.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFormations.Location = new System.Drawing.Point(48, 206);
+            this.dgvFormations.MultiSelect = false;
+            this.dgvFormations.Name = "dgvFormations";
+            this.dgvFormations.ReadOnly = true;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.dgvFormations.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvFormations.Size = new System.Drawing.Size(555, 150);
+            this.dgvFormations.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(166, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Modèle";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(166, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Marque";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(247, 64);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(188, 21);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // cbCompetences
+            // 
+            this.cbCompetences.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCompetences.FormattingEnabled = true;
+            this.cbCompetences.Location = new System.Drawing.Point(247, 107);
+            this.cbCompetences.Name = "cbCompetences";
+            this.cbCompetences.Size = new System.Drawing.Size(188, 21);
+            this.cbCompetences.TabIndex = 1;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Location = new System.Drawing.Point(166, 258);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(8, 8);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(414, 351);
+            this.button1.Location = new System.Drawing.Point(668, 218);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 53);
             this.button1.TabIndex = 2;
@@ -67,42 +152,55 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(541, 351);
+            this.button2.Location = new System.Drawing.Point(667, 277);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 53);
             this.button2.TabIndex = 3;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonExit
             // 
-            this.button3.Location = new System.Drawing.Point(667, 351);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 53);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.buttonExit.Location = new System.Drawing.Point(668, 336);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(108, 53);
+            this.buttonExit.TabIndex = 5;
+            this.buttonExit.Text = "EXIT";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // GestionStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Gestion);
             this.Name = "GestionStock";
             this.Text = "GestionStock";
+            this.Gestion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dgvFormations)).EndInit();
             this.ResumeLayout(false);
         }
 
+        private System.Windows.Forms.Label label3;
+
+        private System.Windows.Forms.DataGridView dgvFormations;
+
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ComboBox cbCompetences;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.Button buttonExit;
+
         private System.Windows.Forms.GroupBox Gestion;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
 
         #endregion
     }

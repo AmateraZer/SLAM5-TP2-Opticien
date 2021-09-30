@@ -13,10 +13,15 @@ namespace WindowsFormsApp1
     {
         private MySqlConnection myConnection;
         public bool ConnOpen = false;
-        private bool chargement = false;
+        public bool chargement = false;
         
         private List<DataTable> dT = new List<DataTable>();
         
+        
+        public bool Connopen { get => ConnOpen; set => ConnOpen = value; }
+        public bool Chargement { get => chargement; set => chargement = value; }
+        public List<DataTable> DT { get => dT; set => dT = value; }
+        public MySqlConnection MyConnection { get => myConnection; set => myConnection = value; }
         
         public ModeleConnexion()
         {
