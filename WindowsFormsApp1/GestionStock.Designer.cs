@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             this.dgvFormations = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CBMA = new System.Windows.Forms.ComboBox();
             this.cbCompetences = new System.Windows.Forms.ComboBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
             this.Gestion.Controls.Add(this.dgvFormations);
             this.Gestion.Controls.Add(this.label2);
             this.Gestion.Controls.Add(this.label1);
-            this.Gestion.Controls.Add(this.comboBox1);
+            this.Gestion.Controls.Add(this.CBMA);
             this.Gestion.Controls.Add(this.cbCompetences);
             this.Gestion.Controls.Add(this.linkLabel1);
             this.Gestion.Location = new System.Drawing.Point(12, 12);
@@ -114,14 +114,15 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 3;
             this.label1.Text = "Marque";
             // 
-            // comboBox1
+            // CBMA
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(247, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 21);
-            this.comboBox1.TabIndex = 2;
+            this.CBMA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBMA.FormattingEnabled = true;
+            this.CBMA.Location = new System.Drawing.Point(247, 64);
+            this.CBMA.Name = "CBMA";
+            this.CBMA.Size = new System.Drawing.Size(188, 21);
+            this.CBMA.TabIndex = 2;
+            this.CBMA.SelectedIndexChanged += new System.EventHandler(this.CBMA_SelectedIndexChanged);
             // 
             // cbCompetences
             // 
@@ -181,10 +182,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.Gestion);
             this.Name = "GestionStock";
             this.Text = "GestionStock";
+            this.Load += new System.EventHandler(this.GestionStock_Load);
             this.Gestion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvFormations)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.ComboBox CBMA;
 
         private System.Windows.Forms.Label label3;
 
